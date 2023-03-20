@@ -1,0 +1,161 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #666;
+    border-radius: 50%;
+    transition: .2s;
+  }
+  .social-icons a:hover{
+    color: rgb(96, 186, 213);
+    background-color: #333;
+  }
+  
+  .company-info h3 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(197, 203, 206);
+  }
+  
+  .company-info p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .login-register button {
+    padding: 7px 10px;
+    background-color: #7c7676;
+    border: none;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 13px;
+
+  }
+  .login-register button:hover{
+        transform: scale(1.1);
+        color: rgb(221, 128, 128);
+  }
+  
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .popup h3 {
+    margin-top: 0;
+    font-size: 24px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  
+  .popup label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .popup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .popup button[type="submit"] {
+    padding: 7px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup button:not([type="submit"]) {
+    padding: 7px 10px;
+    background-color: #d2c8c8;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .social-icons {
+      margin-bottom: 10px;
+    }
+  
+    .social-icons a {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+    }
+  
+    .company-info h3 {
+      font-size: 20px;
+    }
+  
+    .company-info p {
+      font-size: 12px;
+    }
+  
+    .login-register {
+      margin-bottom: 10px;
+    }
+  
+    .login-register button {
+      padding: 8px;
+      margin-left: 5px;
+      font-size: 12px;
+    }
+  
+    .popup form {
+      max-width: 300px;
+    }
+  
+    .popup form input {
+      font-size: 12px;
+    }
+  
+    .popup form button[type="submit"] {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .popup button {
+      font-size:10px;
+    }
+  }
